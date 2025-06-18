@@ -1,0 +1,87 @@
+To: [client.email@example.com]
+Subject: Final Submission – Multilingual Filtration & Translation Utility (with Executable & Automation Features)
+
+Hi [Client's Name],
+
+Hope you're doing well.
+
+We’re pleased to submit the final deliverables for the Multilingual Excel Translation & HRL Filtration Utility, developed by the Analytics Solutions team (S&P: Analytics COE). This Django-based application is now packaged as a single executable (.exe) using PyInstaller, making it easily deployable with no setup required from the user’s side.
+
+🔧 Key Highlights of the Application:
+
+✅ Web Application Features (Django-Based)
+
+Dashboard showing real-time upload stats and user activity.
+
+User signup, login, password reset with OTP, and full admin controls.
+
+Admins can manage user roles and access.
+
+Role-based permissions restrict regular users from seeing others' uploads.
+
+📁 Excel Upload & Filtration
+
+Drag-and-drop support for .xlsx/.xls files.
+
+Version logic: supports latest, oldest, or all HRL matches.
+
+Excel content is cleaned and stored in JSON format in the database.
+
+Duplicate checks and intelligent version handling.
+
+🧪 DMT HRL Filtration
+
+Matches config names with multi-version .hrl files (e.g., valuelist.configname.2024-01-01.a.hrl).
+
+Auto-tags each row as HRL Found or Not Found.
+
+Excel output includes color-coded highlights based on version count:
+
+🔴 1 version → Red
+
+🟢 2 versions → Green
+
+🔵 >2 versions → Blue
+
+Final filtered output is saved with a timestamp in the same folder.
+
+⚡ Performance
+
+Supports background threading and caching for fast execution.
+
+Translates/filters over 1000+ records per minute.
+
+Real-time progress bar with speed, ETA, and record count.
+
+🧾 HTML Merge Automation
+
+Upload multiple .html files and specify a batch size.
+
+Automatically merges files into folders based on batch limits.
+
+Output folders are timestamped and clearly named.
+
+Ideal for bulk merging operations for archiving or ingestion.
+
+📦 One-Click Launch with PyInstaller
+
+Entire Django app packaged as a .exe file.
+
+No need to install Python or dependencies.
+
+Just double-click to run — ideal for client-side use.
+
+📂 Output Files
+
+Final translated or filtered Excel outputs are auto-saved in the original upload folder.
+
+File naming follows:
+<input-file>_translated_output_<timestamp>.xlsx
+<input-file>_filtered_output_<timestamp>.xlsx
+
+Let us know if you'd like a demo walkthrough, assistance with deployment, or any enhancements. We’re happy to support further use cases.
+
+Looking forward to your feedback!
+
+Warm regards,
+[Your Full Name]
